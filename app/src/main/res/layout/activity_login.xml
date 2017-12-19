@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="#fff">
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:foregroundGravity="center_horizontal"
+        android:src="@drawable/logo1"
+        android:layout_marginBottom="28dp"
+        android:layout_above="@+id/email"
+        android:layout_alignStart="@+id/registerconnector" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="317dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="52dp"
+        android:layout_marginBottom="52dp"
+        android:layout_alignBottom="@+id/password"
+        android:layout_alignEnd="@+id/password" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="318dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="114dp"
+        android:layout_marginBottom="47dp"
+        android:layout_above="@+id/login"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="359dp"
+        android:layout_height="48dp"
+        android:text="LOGIN"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="181dp"
+        android:layout_above="@+id/registerconnector"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/registerconnector"
+        android:layout_width="247dp"
+        android:layout_height="26dp"
+        android:text="Don't Have An Account? Sign Up Here!"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="242dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp" />
+
+</RelativeLayout>
