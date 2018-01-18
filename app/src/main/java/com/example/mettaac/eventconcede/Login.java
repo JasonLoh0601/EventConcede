@@ -2,13 +2,12 @@ package com.example.mettaac.eventconcede;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -85,7 +84,7 @@ public class Login extends AppCompatActivity {
                         progressDialog.dismiss();
                         if (task.isSuccessful()) {
                             Toast.makeText(Login.this, "Login successful", Toast.LENGTH_LONG).show();
-                            Intent i = new Intent(Login.this, MainActivity.class);
+                            Intent i = new Intent(Login.this, MainPage.class);
                             i.putExtra("Email", firebaseAuth.getCurrentUser().getEmail());
                             startActivity(i);
                         } else {
